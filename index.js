@@ -26,7 +26,7 @@ app.get("/users", (req, res) => {
      const matched = users.filter(user => user.name.toLowerCase().includes(search))
      res.send(matched)
     }      
-  else{
+  else{ 
     res.send(users);
   }
 });
